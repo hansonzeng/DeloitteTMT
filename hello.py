@@ -1,9 +1,11 @@
 from cloudant import Cloudant
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, flash
 import atexit
 import cf_deployment_tracker
 import os
 import json
+from watson_developer_cloud import VisualRecognitionV3
+from flask_uploads import UploadSet, IMAGES, configure_uploads
 
 # Emit Bluemix deployment event
 cf_deployment_tracker.track()
@@ -38,6 +40,27 @@ elif os.path.isfile('vcap-local.json'):
 # On Bluemix, get the port number from the environment variable PORT
 # When running this app on the local machine, default the port to 8000
 port = int(os.getenv('PORT', 8000))
+
+photos = UploadSet('photos', IMAGES)
+app.config['UPLOADED_PHOTOS_DEST'] = 'static/img'
+configure_uploads(app, photos)
+
+#https://www.youtube.com/watch?v=Exf8RbgKmhM
+@app.route('/upload', methods=['GET', 'POST'])
+def upload():
+    if request.method == 'POST' and 'file' in request.files:
+        filename = photos.save(request.files['file'])
+        flash("Photo saved.")
+        return filename
+    return render_template('index.html')
+
+@app.route('/photo/<id>')
+def show(id):
+    photo = Photo.load(id)
+    if photo is None:
+        abort(404)
+    url = photos.url(photo.filename)
+    return render_template('show.html', url=url, photo=photo)
 
 @app.route('/')
 def home():
@@ -85,4 +108,7 @@ def shutdown():
         client.disconnect()
 
 if __name__ == '__main__':
+    app.secret_key = 'super secret key'
+    app.config['SESSION_TYPE'] = 'filesystem'
+
     app.run(host='0.0.0.0', port=port, debug=True)
