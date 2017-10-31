@@ -15,15 +15,32 @@
 </head>
 
 <body>
-    <div class="container">
-        <h1>Welcome.</h1>
-        <div id="nameInput" class="input-group-lg center-block helloInput">
-            <p class="lead">What is your name?</p>
-            <input id="user_name" type="text" class="form-control" placeholder="name" aria-describedby="sizing-addon1" value="" />
-        </div>
-        <p id="response" class="lead text-center"></p>
 
-        <p id="databaseNames" class="lead text-center"></p>
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <a class="navbar-brand" href="#">Deloitte TMT</a>
+            <ul class="nav navbar-nav pull-right">
+                <li class="active">
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="/results">Results</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+        <h1>Welcome Everyone</h1>
+        <div class="well">
+            This is an image recognition service built to perform magic.
+            The web application is written in Python and uses the Flask Web framework.
+        </div>
     </div>
 
     <div class="container">
@@ -33,9 +50,47 @@
                 <strong>Files:</strong><br>
                 <input id="file-picker" type="file" name="file" accept="image/*" multiple>
             <br>
-            <input type="submit" id="upload-button">
+            <input type="submit" class="btn btn-primary" id="upload-button">
         </form>
     </div>
+
+        <br>
+        <br>
+     <div class="container">
+        <h1>Classify Uploaded Photo</h1>
+        <form id="classify-form" action="{{ url_for('mba_results') }}" method="POST" enctype="multipart/form-data">
+
+                <strong>Files:</strong><br>
+                <input id="file-picker" type="file" name="classify_image" accept="image/*" multiple>
+            <br>
+            <input type="submit" class="btn btn-primary" id="upload-button">
+        </form>
+    </div>
+
+    <div class="container">
+        <br>
+        <br>
+        <br>
+        <h1>Classify Image</h1>
+        <form action="/results" method="POST" class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label for="imgurl" class="col-sm-1 control-label pull-left">URL</label>
+                    <div class="col-sm-10">
+                        <input type="url" class="form-control" name="imgurl" id="imgurl" placeholder="https://.." required="required">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-10 col-sm-offset-1">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+        </form>
+{#         <form action="/results" method="POST">
+            <input name="imgurl">
+            <input type="submit" value="Go!">
+            </form> #}
+    </div>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
