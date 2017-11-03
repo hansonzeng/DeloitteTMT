@@ -8,8 +8,8 @@
     <title>Car Recognition using IBM Watson API</title>
 
     <!-- Bootstrap -->
+	<link href="static/styles.css" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <link href="static/styles.css" rel="stylesheet">
 </head>
 
 <body>
@@ -32,63 +32,59 @@
         <br>
         <br>
         <br>
-		<h3 class="text-center">Results</h3>
-		<h5>Input Image</h5>
+		<h2 class="text-center">Market Basket Analysis Results</h2>
 		<img src="{{ passed_image }}" class="img-responsive" alt="">
-		<h4>Result Summary</h4>
-		<p5>{{ rules }}</p5>
+
+		<br>
+		{% for row in rules_for_classes %}
+		<b><h4 id="greenText">Watson Classified as: </h4><h4>{{ row['Rule 1']['antecedants'] }}</h4></b>
+
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>Rule 1</th>
+					</tr>
+				</thead>
+				<tbody>
+						<tr>
+							<td>Affiliations</td>
+							<td>{{ row['Rule 1']['consequents'] }}</td>
+						</tr>
+						<tr>
+							<td>Lift Value</td>
+							<td>{{ row['Rule 1']['lift'] }}</td>
+						</tr>
+				</tbody>
+			</table>
+
 		<table class="table table-hover">
 			<thead>
 				<tr>
-					<th>Attribute</th>
-					<th>Value</th>
+					<th>Rule 2</th>
 				</tr>
 			</thead>
 			<tbody>
-				<tr>
-					<td>Custom classes</td>
-					<td>{{ custom_classes }}</td>
-				</tr>
-				<tr>
-					<td>Images processed</td>
-					<td>{{ images_processed }}</td>
-				</tr>
-				<tr>
-					<td>Source URL</td>
-					<td>{{ source_url }}</td>
-				</tr>
-				<tr>
-					<td>Resolved URL</td>
-					<td>{{ resolved_url }}</td>
-				</tr>
+					<tr>
+						<td>Affiliations</td>
+						<td>{{ row['Rule 2']['consequents'] }}</td>
+					</tr>
+					<tr>
+						<td>Lift Value</td>
+						<td>{{ row['Rule 2']['lift'] }}</td>
+					</tr>
 			</tbody>
 		</table>
-		<br>
-		<h4>Classifier results</h4>
-		<table class="table table-striped table-hover">
-			<thead>
-				<tr>
-					<th>Class</th>
-					<th>Score</th>
-					<th>Type hierarchy</th>
-				</tr>
-			</thead>
-			<tbody>
-			{% for row in json_resp %}
-    		<tr>
-	      		<td>{{ row['class'] }}</td>
-	      		<td>{{ row['score'] }}</td>
-	      		<td>{{ row['type_hierarchy'] }}</td>
-    		</tr>
-			{% endfor %}
-			</tbody>
-		</table>
+
+		{% endfor %}
+
+
 		<br>
 		<h5> Output JSON </h5>
 		<div class="results">
-    		<pre>{{ complete_response }}</pre>
+    		<pre>{{ rules_for_classes }}</pre>
 		</div>
-		    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

@@ -7,7 +7,7 @@ import json
 import pandas as pd
 from watson_developer_cloud import VisualRecognitionV3
 from flask_uploads import UploadSet, IMAGES, configure_uploads
-from classifyAssociation import(classify, lookup)
+from classifyAssociation import(classify, lookup, convert_category)
 
 # Emit Bluemix deployment event
 cf_deployment_tracker.track()
@@ -18,8 +18,8 @@ db_name = 'mydb'
 client = None
 db = None
 
-classifier = ["Hikesandbikesnewattempt_1294533937", "default"]
-api_key = "72468179b79518522ff0c2d981522827378c8dd4"
+classifier = ["FullClassifier_1661818688", "default"]
+api_key = "3392034336ce62e110d77c8ea9a2d32d372ba0aa"
 #two instances created in this app
 visual_recognition = VisualRecognitionV3('2016-05-20', api_key=api_key)
 
@@ -85,29 +85,36 @@ def recognise_image():
 
 @app.route("/mba_results", methods=['GET','POST'])
 def mba_results():
-    cat = "http://www.readersdigest.ca/wp-content/uploads/2011/01/4-ways-cheer-up-depressed-cat.jpg"
     list = os.listdir('static/img')
     num_imgs = len(list)
     if 'classify_image' in request.files:
         save_path = 'static/img/classify_%s.jpg' % num_imgs
-        print(type(request.files['classify_image']))
         request.files['classify_image'].save(save_path)
     passed_image = open(save_path, 'rb')
-    classification_result = classify(images_file=passed_image, classifier=classifier, min_score=0.4, api_key=api_key)
+
+    classification = classify(images_file=passed_image, classifier=classifier, min_score=0.4, api_key=api_key)
 
     print("image classified as ")
-    print(classification_result)
+    print(classification)
 
     # added cars because bikes isn't one of the groups in the MBA - still awaiting group confirmation from Kate
     # This will also simulate if multiple classifications are returned
-    classification_result.append('Cars')
+    # classification.append('Cars')
 
     print("Determining association rules")
 
+    mapped_categories = []
+
+    for i in classification:
+        mapped_categories.append(convert_category(i))
+
     # parameter used to run this
-    lookup_values = classification_result
+    lookup_values = mapped_categories
 
     # Shows how to get some of the output
+
+    total_rules = []
+
     for interest in lookup_values:
         print(interest)
         print("looking up")
@@ -115,26 +122,20 @@ def mba_results():
 
         # gets rule set from rules table
         rules = lookup(interest, rules_to_return=2)
+        print("The type is a JSON?? Let's see")
+        print(type(rules))
+        if rules is not None:
+            total_rules.append(rules)
 
         # checks if lookup worked
         if isinstance(rules, pd.DataFrame):
-
-            # prints raw dataframe return and then stores values for below example
-            print("the rules are")
+            print(rules)
+        else:
             print(rules)
 
-            # for use outside the loop
-            car_rules = rules
+    print(type(total_rules))
 
-        # prints the invalid return
-        else:
-            print
-            rules
-
-    # Print the top rules from a rule set
-    print(car_rules['str_a'][0])
-
-    return render_template('show_results_2.html', passed_image=save_path, top_2_rules=rules)
+    return render_template('show_results_2.html', passed_image=save_path, rules_for_classes=total_rules)
 
 @app.route('/photo/<id>')
 def show(id):

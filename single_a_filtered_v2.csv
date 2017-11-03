@@ -1,0 +1,154 @@
+,str_a,antecedants,consequents,support,confidence,lift,a_len
+152,Cars,Cars,"Entertainment spending, male",0.307926829,0.366336634,1.749879842,1
+294,Cars,Cars,"male, Outdoor activities",0.307926829,0.402640264,1.745365726,1
+556,Cars,Cars,"male, Outdoor activities, 19-22",0.307926829,0.240924092,1.705534582,1
+644,Cars,Cars,"Entertainment spending, city, male",0.307926829,0.254125413,1.701084394,1
+98,Cars,Cars,male,0.307926829,0.683168317,1.684806075,1
+24,Cars,Cars,"city, male",0.307926829,0.468646865,1.65286206,1
+145,Cars,Cars,"male, 19-22",0.307926829,0.419141914,1.649742574,1
+380,Cars,Cars,"city, male, Outdoor activities",0.307926829,0.254125413,1.645127671,1
+547,Cars,Cars,"city, male, 19-22",0.307926829,0.290429043,1.633041018,1
+369,Reading,Reading,"Entertainment spending, 19-22, female",0.451219512,0.171171171,1.452003728,1
+276,Reading,Reading,"Outdoor activities, female, village",0.451219512,0.177927928,1.423423423,1
+81,Entertainment spending,Entertainment spending,"Economy Management, male",0.408536585,0.171641791,1.407462687,1
+471,Reading,Reading,"19-22, city, Outdoor activities, female",0.451219512,0.209459459,1.402095974,1
+307,Reading,Reading,"19-22, Outdoor activities, female",0.451219512,0.315315315,1.385135135,1
+571,Reading,Reading,"female, village",0.451219512,0.236486486,1.35292269,1
+501,Reading,Reading,"city, 19-22, female",0.451219512,0.335585586,1.347821291,1
+201,Reading,Reading,"19-22, female",0.451219512,0.470720721,1.338697079,1
+643,Entertainment spending,Entertainment spending,"Cars, male, city",0.408536585,0.191542289,1.327307126,1
+599,Reading,Reading,"Outdoor activities, female",0.451219512,0.5,1.322580645,1
+134,Reading,Reading,"Healthy eating, female",0.451219512,0.213963964,1.315878378,1
+415,Reading,Reading,"Healthy eating, female, city",0.451219512,0.157657658,1.314704535,1
+151,Entertainment spending,Entertainment spending,"Cars, male",0.408536585,0.276119403,1.312567597,1
+184,Reading,Reading,"Entertainment spending, city, female",0.451219512,0.189189189,1.301833302,1
+217,Entertainment spending,Entertainment spending,"city, male",0.408536585,0.365671642,1.289680629,1
+227,Reading,Reading,"Entertainment spending, Outdoor activities, female",0.451219512,0.162162162,1.286835222,1
+588,Reading,Reading,female,0.451219512,0.759009009,1.285481695,1
+195,Reading,Reading,"city, Outdoor activities, female",0.451219512,0.322072072,1.277898867,1
+258,Reading,Reading,"Entertainment spending, female",0.451219512,0.252252252,1.272903673,1
+332,Economy Management,Economy Management,"Cars, city",0.283536585,0.272401434,1.270346023,1
+26,Entertainment spending,Entertainment spending,male,0.408536585,0.512437811,1.263756406,1
+232,Reading,Reading,"city, female",0.451219512,0.522522523,1.260201378,1
+563,Entertainment spending,Entertainment spending,"city, Economy Management",0.408536585,0.253731343,1.248358209,1
+629,Outdoor activities,Outdoor activities,"19-22, female, village",0.610772358,0.126455907,1.244326123,1
+565,Economy Management,Economy Management,"Entertainment spending, city",0.283536585,0.365591398,1.236226582,1
+331,Cars,Cars,"city, Economy Management",0.307926829,0.250825083,1.234059406,1
+347,Entertainment spending,Entertainment spending,"male, Outdoor activities, 19-22",0.408536585,0.174129353,1.232685493,1
+277,Outdoor activities,Outdoor activities,"Reading, female, village",0.610772358,0.131447587,1.231851676,1
+116,Entertainment spending,Entertainment spending,"male, Outdoor activities",0.408536585,0.28358209,1.229272142,1
+321,Entertainment spending,Entertainment spending,"city, male, 19-22",0.408536585,0.21641791,1.216886994,1
+633,Outdoor activities,Outdoor activities,"Reading, male",0.610772358,0.1281198,1.212210419,1
+532,Entertainment spending,Entertainment spending,"city, male, Outdoor activities",0.408536585,0.186567164,1.207776905,1
+246,Entertainment spending,Entertainment spending,"male, 19-22",0.408536585,0.305970149,1.204298507,1
+19,Reading,Reading,"<19, female",0.451219512,0.186936937,1.202261085,1
+386,Reading,Reading,"Economy Management, female",0.451219512,0.191441441,1.199862283,1
+512,Outdoor activities,Outdoor activities,"Reading, village",0.610772358,0.169717138,1.192869028,1
+361,Outdoor activities,Outdoor activities,"Healthy eating, Reading",0.610772358,0.153078203,1.186054738,1
+82,Economy Management,Economy Management,"Entertainment spending, male",0.283536585,0.247311828,1.181334168,1
+109,Entertainment spending,Entertainment spending,"Cars, city",0.408536585,0.251243781,1.171677159,1
+593,Outdoor activities,Outdoor activities,"female, village",0.610772358,0.204658902,1.170839299,1
+603,Economy Management,Economy Management,Entertainment spending,0.283536585,0.476702509,1.166853903,1
+602,Entertainment spending,Entertainment spending,Economy Management,0.408536585,0.330845771,1.166853903,1
+137,Economy Management,Economy Management,Cars,0.283536585,0.358422939,1.163987366,1
+136,Cars,Cars,Economy Management,0.307926829,0.330033003,1.163987366,1
+326,Healthy eating,Healthy eating,"male, Outdoor activities",0.277439024,0.267399267,1.159122816,1
+211,Cars,Cars,"Entertainment spending, Outdoor activities",0.307926829,0.280528053,1.154977422,1
+156,Entertainment spending,Entertainment spending,"Economy Management, 19-22",0.408536585,0.18159204,1.152816562,1
+282,Entertainment spending,Entertainment spending,Cars,0.408536585,0.353233831,1.147135609,1
+283,Cars,Cars,Entertainment spending,0.307926829,0.468646865,1.147135609,1
+650,Economy Management,Economy Management,"city, male",0.283536585,0.322580645,1.137703781,1
+167,Economy Management,Economy Management,"Entertainment spending, Outdoor activities",0.283536585,0.275985663,1.136275701,1
+511,Reading,Reading,"Outdoor activities, village",0.451219512,0.22972973,1.13595002,1
+166,Entertainment spending,Entertainment spending,"Economy Management, Outdoor activities",0.408536585,0.191542289,1.135407301,1
+95,Outdoor activities,Outdoor activities,"Entertainment spending, Healthy eating",0.610772358,0.119800333,1.133495456,1
+250,Outdoor activities,Outdoor activities,"19-22, village",0.610772358,0.199667221,1.129152562,1
+110,Cars,Cars,"Entertainment spending, city",0.307926829,0.333333333,1.127147766,1
+360,Reading,Reading,"Healthy eating, Outdoor activities",0.451219512,0.207207207,1.126474541,1
+90,Healthy eating,Healthy eating,"city, Outdoor activities, 19-22",0.277439024,0.274725275,1.117064753,1
+402,Outdoor activities,Outdoor activities,"Entertainment spending, Reading, 19-22",0.610772358,0.121464226,1.11701681,1
+430,Outdoor activities,Outdoor activities,village,0.610772358,0.331114809,1.115811547,1
+4,Healthy eating,Healthy eating,"city, Outdoor activities",0.277439024,0.454212454,1.114576197,1
+102,Outdoor activities,Outdoor activities,"Entertainment spending, village",0.610772358,0.12312812,1.111541926,1
+29,Economy Management,Economy Management,Healthy eating,0.283536585,0.308243728,1.111032337,1
+28,Healthy eating,Healthy eating,Economy Management,0.277439024,0.315018315,1.111032337,1
+263,Outdoor activities,Outdoor activities,"Economy Management, Reading",0.610772358,0.129783694,1.110496998,1
+65,Reading,Reading,"city, Outdoor activities, 19-22",0.451219512,0.272522523,1.108108108,1
+442,Reading,Reading,"Entertainment spending, city, Outdoor activities",0.451219512,0.184684685,1.108108108,1
+401,Reading,Reading,"Entertainment spending, Outdoor activities, 19-22",0.451219512,0.164414414,1.108108108,1
+104,Cars,Cars,Healthy eating,0.307926829,0.306930693,1.106299641,1
+105,Healthy eating,Healthy eating,Cars,0.277439024,0.340659341,1.106299641,1
+335,Outdoor activities,Outdoor activities,Reading,0.610772358,0.499168053,1.106264334,1
+334,Reading,Reading,Outdoor activities,0.451219512,0.675675676,1.106264334,1
+447,Outdoor activities,Outdoor activities,"Reading, 19-22",0.610772358,0.297836938,1.105930368,1
+359,Healthy eating,Healthy eating,"Reading, Outdoor activities",0.277439024,0.336996337,1.105347985,1
+308,Outdoor activities,Outdoor activities,"Reading, 19-22, female",0.610772358,0.232945092,1.096736699,1
+290,Outdoor activities,Outdoor activities,"Healthy eating, female",0.610772358,0.178036606,1.094925125,1
+390,Reading,Reading,"city, Outdoor activities",0.451219512,0.445945946,1.094291299,1
+446,Reading,Reading,"Outdoor activities, 19-22",0.451219512,0.403153153,1.092844911,1
+210,Entertainment spending,Entertainment spending,"Cars, Outdoor activities",0.408536585,0.211442786,1.089317809,1
+414,Healthy eating,Healthy eating,"city, Reading, female",0.277439024,0.256410256,1.087533157,1
+94,Healthy eating,Healthy eating,"Entertainment spending, Outdoor activities",0.277439024,0.263736264,1.085843027,1
+69,Outdoor activities,Outdoor activities,Healthy eating,0.610772358,0.301164725,1.085516813,1
+68,Healthy eating,Healthy eating,Outdoor activities,0.277439024,0.663003663,1.085516813,1
+517,Healthy eating,Healthy eating,"city, Reading",0.277439024,0.333333333,1.078947368,1
+577,Outdoor activities,Outdoor activities,"Entertainment spending, Reading",0.610772358,0.186356073,1.0786728,1
+600,Outdoor activities,Outdoor activities,"Reading, female",0.610772358,0.369384359,1.078558486,1
+157,Economy Management,Economy Management,"Entertainment spending, 19-22",0.283536585,0.261648746,1.077248392,1
+583,Healthy eating,Healthy eating,"city, Outdoor activities, female",0.277439024,0.271062271,1.07550514,1
+443,Outdoor activities,Outdoor activities,"Entertainment spending, city, Reading",0.610772358,0.136439268,1.074049917,1
+172,Outdoor activities,Outdoor activities,"Entertainment spending, 19-22, female",0.610772358,0.126455907,1.072694934,1
+174,Entertainment spending,Entertainment spending,<19,0.408536585,0.23880597,1.068113976,1
+327,Outdoor activities,Outdoor activities,"Healthy eating, male",0.610772358,0.121464226,1.067149988,1
+391,Outdoor activities,Outdoor activities,"city, Reading",0.610772358,0.329450915,1.066380594,1
+66,Outdoor activities,Outdoor activities,"city, Reading, 19-22",0.610772358,0.201331115,1.065106543,1
+312,Reading,Reading,village,0.451219512,0.315315315,1.062569419,1
+506,Healthy eating,Healthy eating,"Outdoor activities, 19-22",0.277439024,0.391941392,1.062452699,1
+507,Outdoor activities,Outdoor activities,"Healthy eating, 19-22",0.610772358,0.178036606,1.061745576,1
+158,Economy Management,Economy Management,male,0.283536585,0.430107527,1.060716307,1
+537,Outdoor activities,Outdoor activities,"19-22, female",0.610772358,0.372712146,1.059967492,1
+483,Healthy eating,Healthy eating,"city, 19-22, female",0.277439024,0.263736264,1.059250953,1
+206,Entertainment spending,Entertainment spending,"Cars, 19-22",0.408536585,0.191542289,1.058862988,1
+241,Healthy eating,Healthy eating,"city, 19-22",0.277439024,0.450549451,1.053065699,1
+228,Outdoor activities,Outdoor activities,"Entertainment spending, Reading, female",0.610772358,0.119800333,1.052531495,1
+428,Outdoor activities,Outdoor activities,female,0.610772358,0.618968386,1.048304461,1
+236,Reading,Reading,<19,0.451219512,0.234234234,1.047665848,1
+207,Cars,Cars,"Entertainment spending, 19-22",0.307926829,0.254125413,1.046273665,1
+336,Outdoor activities,Outdoor activities,23-26,0.610772358,0.12312812,1.04446612,1
+425,Healthy eating,Healthy eating,"city, female",0.277439024,0.432234432,1.042447748,1
+262,Reading,Reading,"Economy Management, Outdoor activities",0.451219512,0.175675676,1.041354608,1
+15,Outdoor activities,Outdoor activities,"Entertainment spending, female",0.610772358,0.206322795,1.041136567,1
+32,Outdoor activities,Outdoor activities,"male, village",0.610772358,0.124792013,1.040638484,1
+54,Entertainment spending,Entertainment spending,"city, Reading, 19-22",0.408536585,0.196517413,1.039640507,1
+576,Reading,Reading,"Entertainment spending, Outdoor activities",0.451219512,0.252252252,1.038561574,1
+289,Healthy eating,Healthy eating,"Outdoor activities, female",0.277439024,0.391941392,1.036748198,1
+56,Reading,Reading,"Entertainment spending, city, 19-22",0.451219512,0.177927928,1.035982728,1
+138,Healthy eating,Healthy eating,city,0.277439024,0.725274725,1.035805994,1
+96,Entertainment spending,Entertainment spending,city,0.408536585,0.723880597,1.03381496,1
+43,Outdoor activities,Outdoor activities,Cars,0.610772358,0.317803661,1.032075254,1
+42,Cars,Cars,Outdoor activities,0.307926829,0.630363036,1.032075254,1
+567,Reading,Reading,Healthy eating,0.451219512,0.286036036,1.030987031,1
+566,Healthy eating,Healthy eating,Reading,0.277439024,0.465201465,1.030987031,1
+607,Economy Management,Economy Management,"male, 19-22",0.283536585,0.261648746,1.029849462,1
+584,Outdoor activities,Outdoor activities,"Healthy eating, female, city",0.610772358,0.12312812,1.026763304,1
+5,Outdoor activities,Outdoor activities,"Healthy eating, city",0.610772358,0.206322795,1.025361771,1
+373,Economy Management,Economy Management,city,0.283536585,0.716845878,1.023768279,1
+76,Cars,Cars,village,0.307926829,0.303630363,1.02319273,1
+472,Outdoor activities,Outdoor activities,"city, Reading, 19-22, female",0.610772358,0.154742097,1.021920959,1
+36,Healthy eating,Healthy eating,"city, male",0.277439024,0.289377289,1.020599472,1
+12,Healthy eating,Healthy eating,"Reading, 19-22",0.277439024,0.274725275,1.020111964,1
+518,Reading,Reading,"Healthy eating, city",0.451219512,0.204954955,1.018564019,1
+133,Healthy eating,Healthy eating,"Reading, female",0.277439024,0.347985348,1.016075912,1
+440,Entertainment spending,Entertainment spending,"city, Reading, Outdoor activities",0.408536585,0.2039801,1.013719282,1
+610,Healthy eating,Healthy eating,male,0.277439024,0.41025641,1.01176017,1
+196,Outdoor activities,Outdoor activities,"city, Reading, female",0.610772358,0.237936772,1.009180102,1
+355,Outdoor activities,Outdoor activities,"Entertainment spending, city, female",0.610772358,0.146422629,1.007551517,1
+13,Reading,Reading,"Healthy eating, 19-22",0.451219512,0.168918919,1.007371007,1
+254,Entertainment spending,Entertainment spending,"city, Reading",0.408536585,0.310945274,1.006480754,1
+74,Reading,Reading,"19-22, village",0.451219512,0.177927928,1.00621311,1
+113,Cars,Cars,"city, Outdoor activities",0.307926829,0.409240924,1.004222118,1
+617,Outdoor activities,Outdoor activities,"Cars, 19-22",0.610772358,0.181364393,1.002598665,1
+521,Outdoor activities,Outdoor activities,"Economy Management, female",0.610772358,0.159733777,1.001133991,1
+487,Entertainment spending,Entertainment spending,"city, Outdoor activities",0.408536585,0.407960199,1.001079391,1
+128,Outdoor activities,Outdoor activities,"Entertainment spending, 19-22",0.610772358,0.242928453,1.000174047,1
+489,Healthy eating,Healthy eating,"19-22, female",0.277439024,0.351648352,1.00006352,1

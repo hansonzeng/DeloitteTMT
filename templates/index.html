@@ -38,26 +38,47 @@
     <div class="container">
         <h1>Welcome Everyone</h1>
         <div class="well">
-            This is an image recognition service built to perform magic.
+            This is an image recognition service built to perform market basket analysis magic.
             The web application is written in Python and uses the Flask Web framework.
         </div>
     </div>
 
-    <div class="container">
-        <h1>Add Photo</h1>
-        <form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">
+    <!--<div class="container">-->
+        <!--<h1>Add Photo</h1>-->
+        <!--<form id="upload-form" action="{{ url_for('upload') }}" method="POST" enctype="multipart/form-data">-->
 
-                <strong>Files:</strong><br>
-                <input id="file-picker" type="file" name="file" accept="image/*" multiple>
-            <br>
-            <input type="submit" class="btn btn-primary" id="upload-button">
-        </form>
-    </div>
+                <!--<strong>Files:</strong><br>-->
+                <!--<input id="file-picker" type="file" name="file" accept="image/*" multiple>-->
+            <!--<br>-->
+            <!--<input type="submit" class="btn btn-primary" id="upload-button">-->
+        <!--</form>-->
+    <!--</div>-->
 
         <br>
         <br>
+     <!--<div class="container">-->
+        <!--<h1>IBM Watson Classification Engine</h1>-->
+        <!--<form action="/results" method="POST" class="form-horizontal" role="form">-->
+                <!--<div class="form-group">-->
+                    <!--<label for="imgurl" class="col-sm-1 control-label pull-left">URL</label>-->
+                    <!--<div class="col-sm-10">-->
+                        <!--<input type="url" class="form-control" name="imgurl" id="imgurl" placeholder="https://.." required="required">-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="form-group">-->
+                    <!--<div class="col-sm-10 col-sm-offset-1">-->
+                        <!--<button type="submit" class="btn btn-primary">Submit</button>-->
+                    <!--</div>-->
+                <!--</div>-->
+        <!--</form>-->
+<!--{#         <form action="/results" method="POST">-->
+            <!--<input name="imgurl">-->
+            <!--<input type="submit" value="Go!">-->
+            <!--</form> #}-->
+        <!--</div>-->
+
      <div class="container">
-        <h1>Classify Uploaded Photo</h1>
+        <h1>Market Basket Analysis Engine</h1>
         <form id="classify-form" action="{{ url_for('mba_results') }}" method="POST" enctype="multipart/form-data">
 
                 <strong>Files:</strong><br>
@@ -65,30 +86,6 @@
             <br>
             <input type="submit" class="btn btn-primary" id="upload-button">
         </form>
-    </div>
-
-    <div class="container">
-        <br>
-        <br>
-        <br>
-        <h1>Classify Image</h1>
-        <form action="/results" method="POST" class="form-horizontal" role="form">
-                <div class="form-group">
-                    <label for="imgurl" class="col-sm-1 control-label pull-left">URL</label>
-                    <div class="col-sm-10">
-                        <input type="url" class="form-control" name="imgurl" id="imgurl" placeholder="https://.." required="required">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-sm-10 col-sm-offset-1">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
-                </div>
-        </form>
-{#         <form action="/results" method="POST">
-            <input name="imgurl">
-            <input type="submit" value="Go!">
-            </form> #}
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

@@ -1,5 +1,6 @@
 # file for association rules recovery
 import pandas as pd
+import json
 from watson_developer_cloud import VisualRecognitionV3
 
 '''
@@ -31,7 +32,7 @@ def classify(images_file, classifier, min_score, image_url=None, api_key="724681
 # currently only built for single item item sets
 def lookup(lookup_value, rules_to_return=1):
     # read in lookup table - could make this dynamic or a variable but simplifying for demo
-    lookup_table = pd.read_csv('single_a_filtered.csv')
+    lookup_table = pd.read_csv('single_a_filtered_v2.csv')
 
     # get list of all antecedents
     antes = list(set(lookup_table['str_a']))
@@ -42,12 +43,44 @@ def lookup(lookup_value, rules_to_return=1):
         rules = lookup_table.loc[lookup_table['str_a'] == lookup_value]
 
         # sort rules by lift
-        sorted_rules = rules.sort_values('lift', ascending=False)
+        sorted_rules = rules.sort('lift', ascending=False)
 
         # return the top X rules
-        return sorted_rules.head(rules_to_return)
+        top_rules = sorted_rules.head(rules_to_return)[['antecedants', 'consequents', 'lift']]
+
+        # add useful index for JSON conversion
+        index = ['Rule %d' % (i) for i in range(1, len(top_rules) + 1)]
+
+        # apply index to dataframe
+        top_rules.loc[:, 'index'] = index
+        top_rules = top_rules.set_index('index')
+
+        # convert to JSON
+        print("top_rules type is")
+        print(type(top_rules))
+
+        json_object = top_rules.to_json(orient='index')
+        json_object_loaded = json.loads(json_object)
+
+        print("IN THE FUNCTION IS THIS A JSON??")
+        print(type(json_object_loaded))
+        return json_object_loaded
 
     else:
-        print
-        "no matching lookup values"
-        return "no value found"
+        return None
+
+
+# Change from classifier category to MBA category. Takes one category in as a string and returns one string value
+def convert_category(lookup_val):
+	import pandas as pd
+
+	try:
+		# pull in lookup table
+		lookup_table = pd.read_csv('category_mapping.csv')
+		# vlookup
+		category = lookup_table.loc[lookup_table['New Category'] == lookup_val]['Possible Matching Option'].iloc[0]
+		# return a string value of the category
+		return category
+
+	except:
+		return 'null'

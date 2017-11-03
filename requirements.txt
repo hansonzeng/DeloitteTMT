@@ -3,4 +3,4 @@ cf-deployment-tracker==1.0.4
 cloudant==2.4.0
 watson-developer-cloud==0.26.1
 flask-uploads==0.2.1
-pandas==0.21.0
+pandas==0.13.1
