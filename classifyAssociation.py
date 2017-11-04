@@ -30,7 +30,7 @@ def classify(images_file, classifier, min_score, image_url=None, api_key="724681
 
 
 # currently only built for single item item sets
-def lookup(lookup_value, rules_to_return=1):
+def lookup(lookup_value, classResult, rules_to_return=1):
     # read in lookup table - could make this dynamic or a variable but simplifying for demo
     lookup_table = pd.read_csv('single_a_filtered_v2.csv')
 
@@ -48,8 +48,13 @@ def lookup(lookup_value, rules_to_return=1):
         # return the top X rules
         top_rules = sorted_rules.head(rules_to_return)[['antecedants', 'consequents', 'lift']]
 
+        #adds the class from Watson to return the Dataframe
+        top_rules["class"] = classResult
+
         # add useful index for JSON conversion
-        index = ['Rule %d' % (i) for i in range(1, len(top_rules) + 1)]
+        index = []
+        for i in range(1, len(top_rules) + 1):
+            index.append( 'Rule %d' % (i))
 
         # apply index to dataframe
         top_rules.loc[:, 'index'] = index
@@ -62,8 +67,6 @@ def lookup(lookup_value, rules_to_return=1):
         json_object = top_rules.to_json(orient='index')
         json_object_loaded = json.loads(json_object)
 
-        print("IN THE FUNCTION IS THIS A JSON??")
-        print(type(json_object_loaded))
         return json_object_loaded
 
     else:

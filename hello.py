@@ -114,16 +114,15 @@ def mba_results():
     # Shows how to get some of the output
 
     total_rules = []
-
-    for interest in lookup_values:
+    times = len(lookup_values)
+    for i in range(0, times):
+        interest = lookup_values[i]
         print(interest)
         print("looking up")
         print("top two association rules are...")
 
         # gets rule set from rules table
-        rules = lookup(interest, rules_to_return=2)
-        print("The type is a JSON?? Let's see")
-        print(type(rules))
+        rules = lookup(interest, rules_to_return=2, classResult=classification[i])
         if rules is not None:
             total_rules.append(rules)
 

@@ -32,12 +32,12 @@
         <br>
         <br>
         <br>
-		<h2 class="text-center">Market Basket Analysis Results</h2>
+		<h2 class="text-center"> Affinity Analysis Results</h2>
 		<img src="{{ passed_image }}" class="img-responsive" alt="">
 
 		<br>
 		{% for row in rules_for_classes %}
-		<b><h4 id="greenText">Watson Classified as: </h4><h4>{{ row['Rule 1']['antecedants'] }}</h4></b>
+		<b><h4 id="greenText">Watson Classified as: </h4><h4>{{ row['Rule 1']['class'] }}</h4></b>
 
 			<table class="table table-hover">
 				<thead>
@@ -51,7 +51,7 @@
 							<td>{{ row['Rule 1']['consequents'] }}</td>
 						</tr>
 						<tr>
-							<td>Lift Value</td>
+							<td>Correlation Strength</td>
 							<td>{{ row['Rule 1']['lift'] }}</td>
 						</tr>
 				</tbody>
@@ -69,7 +69,7 @@
 						<td>{{ row['Rule 2']['consequents'] }}</td>
 					</tr>
 					<tr>
-						<td>Lift Value</td>
+						<td>Correlation Strength</td>
 						<td>{{ row['Rule 2']['lift'] }}</td>
 					</tr>
 			</tbody>
