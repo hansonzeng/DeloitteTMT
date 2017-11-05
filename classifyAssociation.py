@@ -8,7 +8,7 @@ Get image classification using our custom classifier
 '''
 
 # call this function by providing a URL to an image and can optionally update the API key
-def classify(images_file, classifier, min_score, image_url=None, api_key="72468179b79518522ff0c2d981522827378c8dd4"):
+def classify(images_file, classifier, min_score, image_url=None, api_key="3392034336ce62e110d77c8ea9a2d32d372ba0aa"):
     # API Setup
     visual_recognition = VisualRecognitionV3('2016-05-20', api_key=api_key)
 
@@ -21,6 +21,9 @@ def classify(images_file, classifier, min_score, image_url=None, api_key="724681
     list_of_positives = []
     for x in results['images'][0]['classifiers'][0]['classes']:
 
+        print("Looking at this class in CLASSIFICATION WITH SCORE")
+        print(x['class'])
+        print(x['score'])
         # Make a decision and add to list if positive
         score = float(x['score'])
         if score > min_score:  # Would be better if we could compare relative scores
