@@ -1,0 +1,109 @@
+,antecedants,consequents,support,confidence,lift,a_len,str_a
+104,frozenset(['Cars']),"frozenset(['Entertainment spending', 'male'])",0.307926829,0.366336634,1.749879842,1,Cars
+176,frozenset(['Cars']),"frozenset(['male', 'Outdoor activities'])",0.307926829,0.402640264,1.745365726,1,Cars
+336,frozenset(['Cars']),"frozenset(['Entertainment spending', 'city', 'male'])",0.307926829,0.254125413,1.701084394,1,Cars
+46,frozenset(['Cars']),frozenset(['male']),0.307926829,0.683168317,1.684806075,1,Cars
+10,frozenset(['Cars']),"frozenset(['city', 'male'])",0.307926829,0.468646865,1.65286206,1,Cars
+86,frozenset(['Cars']),"frozenset(['city', 'male', 'Outdoor activities'])",0.307926829,0.254125413,1.645127671,1,Cars
+76,frozenset(['Reading']),"frozenset(['Outdoor activities', 'female', 'village'])",0.451219512,0.177927928,1.423423423,1,Reading
+37,frozenset(['Entertainment spending']),"frozenset(['Economy Management', 'male'])",0.408536585,0.171641791,1.407462687,1,Entertainment spending
+295,frozenset(['Reading']),"frozenset(['female', 'village'])",0.451219512,0.236486486,1.35292269,1,Reading
+335,frozenset(['Entertainment spending']),"frozenset(['Cars', 'male', 'city'])",0.408536585,0.191542289,1.327307126,1,Entertainment spending
+317,frozenset(['Reading']),"frozenset(['Outdoor activities', 'female'])",0.451219512,0.5,1.322580645,1,Reading
+92,frozenset(['Reading']),"frozenset(['Healthy eating', 'female'])",0.451219512,0.213963964,1.315878378,1,Reading
+225,frozenset(['Reading']),"frozenset(['Healthy eating', 'female', 'city'])",0.451219512,0.157657658,1.314704535,1,Reading
+103,frozenset(['Entertainment spending']),"frozenset(['Cars', 'male'])",0.408536585,0.276119403,1.312567597,1,Entertainment spending
+120,frozenset(['Reading']),"frozenset(['Entertainment spending', 'city', 'female'])",0.451219512,0.189189189,1.301833302,1,Reading
+141,frozenset(['Entertainment spending']),"frozenset(['city', 'male'])",0.408536585,0.365671642,1.289680629,1,Entertainment spending
+151,frozenset(['Reading']),"frozenset(['Entertainment spending', 'Outdoor activities', 'female'])",0.451219512,0.162162162,1.286835222,1,Reading
+312,frozenset(['Reading']),frozenset(['female']),0.451219512,0.759009009,1.285481695,1,Reading
+131,frozenset(['Reading']),"frozenset(['city', 'Outdoor activities', 'female'])",0.451219512,0.322072072,1.277898867,1,Reading
+260,frozenset(['Reading']),"frozenset(['Entertainment spending', 'female'])",0.451219512,0.252252252,1.272903673,1,Reading
+188,frozenset(['Economy Management']),"frozenset(['Cars', 'city'])",0.283536585,0.272401434,1.270346023,1,Economy Management
+12,frozenset(['Entertainment spending']),frozenset(['male']),0.408536585,0.512437811,1.263756406,1,Entertainment spending
+156,frozenset(['Reading']),"frozenset(['city', 'female'])",0.451219512,0.522522523,1.260201378,1,Reading
+287,frozenset(['Entertainment spending']),"frozenset(['city', 'Economy Management'])",0.408536585,0.253731343,1.248358209,1,Entertainment spending
+289,frozenset(['Economy Management']),"frozenset(['Entertainment spending', 'city'])",0.283536585,0.365591398,1.236226582,1,Economy Management
+187,frozenset(['Cars']),"frozenset(['city', 'Economy Management'])",0.307926829,0.250825083,1.234059406,1,Cars
+77,frozenset(['Outdoor activities']),"frozenset(['Reading', 'female', 'village'])",0.610772358,0.131447587,1.231851676,1,Outdoor activities
+64,frozenset(['Entertainment spending']),"frozenset(['male', 'Outdoor activities'])",0.408536585,0.28358209,1.229272142,1,Entertainment spending
+325,frozenset(['Outdoor activities']),"frozenset(['Reading', 'male'])",0.610772358,0.1281198,1.212210419,1,Outdoor activities
+282,frozenset(['Entertainment spending']),"frozenset(['city', 'male', 'Outdoor activities'])",0.408536585,0.186567164,1.207776905,1,Entertainment spending
+208,frozenset(['Reading']),"frozenset(['Economy Management', 'female'])",0.451219512,0.191441441,1.199862283,1,Reading
+266,frozenset(['Outdoor activities']),"frozenset(['Reading', 'village'])",0.610772358,0.169717138,1.192869028,1,Outdoor activities
+203,frozenset(['Outdoor activities']),"frozenset(['Healthy eating', 'Reading'])",0.610772358,0.153078203,1.186054738,1,Outdoor activities
+38,frozenset(['Economy Management']),"frozenset(['Entertainment spending', 'male'])",0.283536585,0.247311828,1.181334168,1,Economy Management
+57,frozenset(['Entertainment spending']),"frozenset(['Cars', 'city'])",0.408536585,0.251243781,1.171677159,1,Entertainment spending
+231,frozenset(['Outdoor activities']),"frozenset(['female', 'village'])",0.610772358,0.204658902,1.170839299,1,Outdoor activities
+321,frozenset(['Economy Management']),frozenset(['Entertainment spending']),0.283536585,0.476702509,1.166853903,1,Economy Management
+320,frozenset(['Entertainment spending']),frozenset(['Economy Management']),0.408536585,0.330845771,1.166853903,1,Entertainment spending
+97,frozenset(['Economy Management']),frozenset(['Cars']),0.283536585,0.358422939,1.163987366,1,Economy Management
+96,frozenset(['Cars']),frozenset(['Economy Management']),0.307926829,0.330033003,1.163987366,1,Cars
+182,frozenset(['Healthy eating']),"frozenset(['male', 'Outdoor activities'])",0.277439024,0.267399267,1.159122816,1,Healthy eating
+137,frozenset(['Cars']),"frozenset(['Entertainment spending', 'Outdoor activities'])",0.307926829,0.280528053,1.154977422,1,Cars
+167,frozenset(['Cars']),frozenset(['Entertainment spending']),0.307926829,0.468646865,1.147135609,1,Cars
+166,frozenset(['Entertainment spending']),frozenset(['Cars']),0.408536585,0.353233831,1.147135609,1,Entertainment spending
+342,frozenset(['Economy Management']),"frozenset(['city', 'male'])",0.283536585,0.322580645,1.137703781,1,Economy Management
+111,frozenset(['Economy Management']),"frozenset(['Entertainment spending', 'Outdoor activities'])",0.283536585,0.275985663,1.136275701,1,Economy Management
+265,frozenset(['Reading']),"frozenset(['Outdoor activities', 'village'])",0.451219512,0.22972973,1.13595002,1,Reading
+110,frozenset(['Entertainment spending']),"frozenset(['Economy Management', 'Outdoor activities'])",0.408536585,0.191542289,1.135407301,1,Entertainment spending
+43,frozenset(['Outdoor activities']),"frozenset(['Entertainment spending', 'Healthy eating'])",0.610772358,0.119800333,1.133495456,1,Outdoor activities
+58,frozenset(['Cars']),"frozenset(['Entertainment spending', 'city'])",0.307926829,0.333333333,1.127147766,1,Cars
+202,frozenset(['Reading']),"frozenset(['Healthy eating', 'Outdoor activities'])",0.451219512,0.207207207,1.126474541,1,Reading
+242,frozenset(['Outdoor activities']),frozenset(['village']),0.610772358,0.331114809,1.115811547,1,Outdoor activities
+4,frozenset(['Healthy eating']),"frozenset(['city', 'Outdoor activities'])",0.277439024,0.454212454,1.114576197,1,Healthy eating
+50,frozenset(['Outdoor activities']),"frozenset(['Entertainment spending', 'village'])",0.610772358,0.12312812,1.111541926,1,Outdoor activities
+15,frozenset(['Economy Management']),frozenset(['Healthy eating']),0.283536585,0.308243728,1.111032337,1,Economy Management
+14,frozenset(['Healthy eating']),frozenset(['Economy Management']),0.277439024,0.315018315,1.111032337,1,Healthy eating
+165,frozenset(['Outdoor activities']),"frozenset(['Economy Management', 'Reading'])",0.610772358,0.129783694,1.110496998,1,Outdoor activities
+254,frozenset(['Reading']),"frozenset(['Entertainment spending', 'city', 'Outdoor activities'])",0.451219512,0.184684685,1.108108108,1,Reading
+52,frozenset(['Cars']),frozenset(['Healthy eating']),0.307926829,0.306930693,1.106299641,1,Cars
+53,frozenset(['Healthy eating']),frozenset(['Cars']),0.277439024,0.340659341,1.106299641,1,Healthy eating
+191,frozenset(['Outdoor activities']),frozenset(['Reading']),0.610772358,0.499168053,1.106264334,1,Outdoor activities
+190,frozenset(['Reading']),frozenset(['Outdoor activities']),0.451219512,0.675675676,1.106264334,1,Reading
+201,frozenset(['Healthy eating']),"frozenset(['Reading', 'Outdoor activities'])",0.277439024,0.336996337,1.105347985,1,Healthy eating
+172,frozenset(['Outdoor activities']),"frozenset(['Healthy eating', 'female'])",0.610772358,0.178036606,1.094925125,1,Outdoor activities
+212,frozenset(['Reading']),"frozenset(['city', 'Outdoor activities'])",0.451219512,0.445945946,1.094291299,1,Reading
+136,frozenset(['Entertainment spending']),"frozenset(['Cars', 'Outdoor activities'])",0.408536585,0.211442786,1.089317809,1,Entertainment spending
+224,frozenset(['Healthy eating']),"frozenset(['city', 'Reading', 'female'])",0.277439024,0.256410256,1.087533157,1,Healthy eating
+42,frozenset(['Healthy eating']),"frozenset(['Entertainment spending', 'Outdoor activities'])",0.277439024,0.263736264,1.085843027,1,Healthy eating
+26,frozenset(['Healthy eating']),frozenset(['Outdoor activities']),0.277439024,0.663003663,1.085516813,1,Healthy eating
+27,frozenset(['Outdoor activities']),frozenset(['Healthy eating']),0.610772358,0.301164725,1.085516813,1,Outdoor activities
+271,frozenset(['Healthy eating']),"frozenset(['city', 'Reading'])",0.277439024,0.333333333,1.078947368,1,Healthy eating
+301,frozenset(['Outdoor activities']),"frozenset(['Entertainment spending', 'Reading'])",0.610772358,0.186356073,1.0786728,1,Outdoor activities
+318,frozenset(['Outdoor activities']),"frozenset(['Reading', 'female'])",0.610772358,0.369384359,1.078558486,1,Outdoor activities
+307,frozenset(['Healthy eating']),"frozenset(['city', 'Outdoor activities', 'female'])",0.277439024,0.271062271,1.07550514,1,Healthy eating
+255,frozenset(['Outdoor activities']),"frozenset(['Entertainment spending', 'city', 'Reading'])",0.610772358,0.136439268,1.074049917,1,Outdoor activities
+183,frozenset(['Outdoor activities']),"frozenset(['Healthy eating', 'male'])",0.610772358,0.121464226,1.067149988,1,Outdoor activities
+213,frozenset(['Outdoor activities']),"frozenset(['city', 'Reading'])",0.610772358,0.329450915,1.066380594,1,Outdoor activities
+178,frozenset(['Reading']),frozenset(['village']),0.451219512,0.315315315,1.062569419,1,Reading
+106,frozenset(['Economy Management']),frozenset(['male']),0.283536585,0.430107527,1.060716307,1,Economy Management
+152,frozenset(['Outdoor activities']),"frozenset(['Entertainment spending', 'Reading', 'female'])",0.610772358,0.119800333,1.052531495,1,Outdoor activities
+240,frozenset(['Outdoor activities']),frozenset(['female']),0.610772358,0.618968386,1.048304461,1,Outdoor activities
+237,frozenset(['Healthy eating']),"frozenset(['city', 'female'])",0.277439024,0.432234432,1.042447748,1,Healthy eating
+164,frozenset(['Reading']),"frozenset(['Economy Management', 'Outdoor activities'])",0.451219512,0.175675676,1.041354608,1,Reading
+7,frozenset(['Outdoor activities']),"frozenset(['Entertainment spending', 'female'])",0.610772358,0.206322795,1.041136567,1,Outdoor activities
+18,frozenset(['Outdoor activities']),"frozenset(['male', 'village'])",0.610772358,0.124792013,1.040638484,1,Outdoor activities
+300,frozenset(['Reading']),"frozenset(['Entertainment spending', 'Outdoor activities'])",0.451219512,0.252252252,1.038561574,1,Reading
+171,frozenset(['Healthy eating']),"frozenset(['Outdoor activities', 'female'])",0.277439024,0.391941392,1.036748198,1,Healthy eating
+98,frozenset(['Healthy eating']),frozenset(['city']),0.277439024,0.725274725,1.035805994,1,Healthy eating
+44,frozenset(['Entertainment spending']),frozenset(['city']),0.408536585,0.723880597,1.03381496,1,Entertainment spending
+24,frozenset(['Cars']),frozenset(['Outdoor activities']),0.307926829,0.630363036,1.032075254,1,Cars
+25,frozenset(['Outdoor activities']),frozenset(['Cars']),0.610772358,0.317803661,1.032075254,1,Outdoor activities
+290,frozenset(['Healthy eating']),frozenset(['Reading']),0.277439024,0.465201465,1.030987031,1,Healthy eating
+291,frozenset(['Reading']),frozenset(['Healthy eating']),0.451219512,0.286036036,1.030987031,1,Reading
+308,frozenset(['Outdoor activities']),"frozenset(['Healthy eating', 'female', 'city'])",0.610772358,0.12312812,1.026763304,1,Outdoor activities
+5,frozenset(['Outdoor activities']),"frozenset(['Healthy eating', 'city'])",0.610772358,0.206322795,1.025361771,1,Outdoor activities
+205,frozenset(['Economy Management']),frozenset(['city']),0.283536585,0.716845878,1.023768279,1,Economy Management
+32,frozenset(['Cars']),frozenset(['village']),0.307926829,0.303630363,1.02319273,1,Cars
+22,frozenset(['Healthy eating']),"frozenset(['city', 'male'])",0.277439024,0.289377289,1.020599472,1,Healthy eating
+272,frozenset(['Reading']),"frozenset(['Healthy eating', 'city'])",0.451219512,0.204954955,1.018564019,1,Reading
+91,frozenset(['Healthy eating']),"frozenset(['Reading', 'female'])",0.277439024,0.347985348,1.016075912,1,Healthy eating
+252,frozenset(['Entertainment spending']),"frozenset(['city', 'Reading', 'Outdoor activities'])",0.408536585,0.2039801,1.013719282,1,Entertainment spending
+322,frozenset(['Healthy eating']),frozenset(['male']),0.277439024,0.41025641,1.01176017,1,Healthy eating
+132,frozenset(['Outdoor activities']),"frozenset(['city', 'Reading', 'female'])",0.610772358,0.237936772,1.009180102,1,Outdoor activities
+197,frozenset(['Outdoor activities']),"frozenset(['Entertainment spending', 'city', 'female'])",0.610772358,0.146422629,1.007551517,1,Outdoor activities
+160,frozenset(['Entertainment spending']),"frozenset(['city', 'Reading'])",0.408536585,0.310945274,1.006480754,1,Entertainment spending
+61,frozenset(['Cars']),"frozenset(['city', 'Outdoor activities'])",0.307926829,0.409240924,1.004222118,1,Cars
+275,frozenset(['Outdoor activities']),"frozenset(['Economy Management', 'female'])",0.610772358,0.159733777,1.001133991,1,Outdoor activities
+257,frozenset(['Entertainment spending']),"frozenset(['city', 'Outdoor activities'])",0.408536585,0.407960199,1.001079391,1,Entertainment spending
