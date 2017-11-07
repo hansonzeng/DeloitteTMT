@@ -88,7 +88,7 @@ def mba_results():
     list = os.listdir('static/img')
     num_imgs = len(list)
     if 'classify_image' in request.files:
-        save_path = 'static/img/classify_%s.jpg' % num_imgs
+        save_path = 'static/img/classified_%s.jpg' % num_imgs
         request.files['classify_image'].save(save_path)
     passed_image = open(save_path, 'rb')
 
